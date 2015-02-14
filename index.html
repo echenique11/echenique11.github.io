@@ -1,27 +1,69 @@
+<!DOCTYPE html>
 <html>
-	<style>
-		.circleImage {
-			-webkit-border-radius: 99px;
-			-moz-border-radius: 99px;
-			border-radius: 99px;
-			width:100px;
-			height: 100px;
-			margin:auto;
-		}
-		body {
-			text-align: center;
-			padding: 10px;
-		}
+	<head>
+		<title>Luis Echenique</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+	</head>
+	<body>
+		<nav>
+			<div>
+				<input id="searchInput" name="searchInput" type="text" />
+			</div>
+			<ul>
+				<li><a href="#">About me</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="blog/index.html">My Blog</a></li>
+			</ul>
+		</nav>
 
-	</style>
+		<div class="logoContainer">
+			<img src="https://avatars1.githubusercontent.com/u/9676505?v=3&s=460" />
+		</div>
 
-  	<body>
-  		<img src='https://avatars1.githubusercontent.com/u/9676505?v=3&s=460' class='circleImage' />
-   		<h1>Hello DBC!</h1>
-   		<h2>U1.W1: Git Bloggin</h2>
-   		<a href="blog/t1-git-blog.html">Prepare your blog</a>
-   		</br>
-   		</br>
-   		<a href="blog/c1-chefs-kitchen.html">Kitchen vs. Table</a>
-  	</body>
+		<div class="clearBoth">&nbsp;</div>
+
+			<header id="socialLinks">
+				<ul>
+					<li><a href=""><img src="images/twitter.png" /></a></li>
+					<li><a href=""><img src="images/google.png" /></a></li>
+					<li><a href=""><img src="images/git.png" /></a></li>
+				</ul>
+			</header>
+		<div class="mainContent">
+
+			<section class="leftContent content">
+				<span>Last Project</span>
+				<div id="galleryContainer">
+					<img src="https://github.com/echenique11/phase-0-unit-1/raw/master/week-2/imgs/exercise-9.png" />
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada facilisis ultricies. Nulla id ultricies mauris. Nunc ut neque in leo tincidunt dapibus id ac elit. Curabitur interdum enim sit amet mauris ornare maximus. Suspendisse consequat felis mi, facilisis dapibus turpis eleifend vestibulum. Aliquam erat volutpat. Mauris ut dapibus nisi, venenatis varius leo. Curabitur eu scelerisque erat. In tincidunt eros at ullamcorper convallis.</p>
+				<a href="#" class="btnRight">detail...</a>
+			</section>
+
+			<section class="rightContent content panel" >
+				<header>
+					Portfolio
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada facilisis ultricies. Nulla id ultricies mauris. Nunc ut neque in leo tincidunt dapibus id ac elit. Curabitur interdum enim sit amet mauris ornare maximus. Suspendisse consequat felis mi, facilisis dapibus turpis eleifend vestibulum. Aliquam erat volutpat. Mauris ut dapibus nisi, venenatis varius leo. Curabitur eu scelerisque erat. In tincidunt eros at ullamcorper convallis.</p>
+				<a href="#" class="btnRight">more...</a>
+			</section>
+
+			<section class="rightContent content panel" >
+				<header>
+					Contact
+				</header>
+				<ul id="contactLinks">
+					<li><a href="mailto:echenique11@gmail.com"><img src="images/email.png" class="contactIcon" /> echenique11@gmail.com</a></li>
+					<li><a href="tel:8098541988"><img src="images/phone.png" class="contactIcon" /> 809-854-1988</a></li>
+				</ul>
+				<a href="#" class="btnRight">more...</a>
+			</section>
+
+		</div>
+		<footer>
+			Copyright
+		</footer>
+
+	</body>
 </html>

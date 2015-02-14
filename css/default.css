@@ -1,0 +1,169 @@
+body {
+	padding:0px;
+	margin:0px;
+	font-family: sans-serif;
+	background-color: #FAFAFA;
+}
+
+nav {
+	position: fixed;
+	top:0px;
+	background-color: #5882FA;
+	width:100%;
+	height: 80px;
+	z-index: 998;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+}
+
+nav ul {
+	float: right;
+	padding: 10px;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 10px;
+}
+
+nav a {
+	color:#fff;
+}
+
+nav a:hover {
+	color:#333;
+}
+
+nav div {
+	float:right;
+	padding-top: 24px;
+	padding-right: 10px;
+}
+
+.logoContainer {
+	position: fixed;
+	z-index: 999;
+	top: 10px;
+	left:10px;
+}
+
+.logoContainer img {
+	width: 100px;
+	height: 100px;
+}
+
+.leftContent {
+	width:60%;
+	float: left;
+
+}
+
+.leftContent span {
+	font-weight: bold;
+	font-size: 2em;
+	border-bottom: 1px solid #333;
+	padding-bottom: 10px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.rightContent {
+	width:40%;
+	float: left;
+}
+
+.content {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+	padding:15px;
+}
+
+#socialLinks ul {
+	margin:auto;
+	width: 165px;
+
+}
+
+#socialLinks ul li {
+	display: inline;
+}
+
+#socialLinks ul img {
+	width: 50px;
+	height: 50px;
+}
+
+#galleryContainer img {
+	width: 100%;
+	padding-top:10px;
+}
+
+.panel {
+	border: 1px solid #333;
+	margin: 5px 0px;
+}
+
+.panel header {
+	background-color: #333;
+	font-weight: bold;
+	padding: 10px;
+	color:white;
+}
+
+.mainContent{
+	padding: 10px;
+	overflow: hidden;
+	clear: both;
+}
+
+
+footer {
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #333;
+	color: #fff;
+}
+
+.clearBoth {
+	clear:both;
+	height: 85px;
+}
+
+.contactIcon {
+	width:25px;
+	height: 25px;
+
+}
+
+.btnRight {
+	float:right;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.btnRight:hover {
+	background-color: #ccc;
+}
+
+#contactLinks a {
+	color: #333;
+}
+
+#contactLinks a:hover {
+	color: #ccc;
+}
