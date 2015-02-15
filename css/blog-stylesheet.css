@@ -11,7 +11,7 @@ body {
 	text-align: center;
 	padding: 0px;
 	margin:0px;
-	background-color: #7E5C5C;
+	background-color: #333;
 }
 
 ul {
@@ -31,8 +31,7 @@ ul {
 
 nav {
 	float: left;
-	width: 240px;
-	height: 1024px;
+	width: 20%;
 	background-color: #333;
 	font-weight: bold;
 }
@@ -73,4 +72,14 @@ header {
 
 main {
 	font-family: fantasy;
+	float:right;
+	width: 80%;
+	background-color: #7E5C5C;
+}
+
+.blogImage {
+	width: 90%;
+	margin: auto;
+	padding:20px;
+	display: block;
 }
