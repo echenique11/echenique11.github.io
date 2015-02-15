@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Luis Echenique</title>
+		<link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+	</head>
+	<body>
+		<nav>
+			<ul id="socialLinks">
+				<li><a href=""><img src="../images/twitter.png" alt="twitter" /></a></li>
+				<li><a href=""><img src="../images/google.png" alt="google +" /></a></li>
+				<li><a href=""><img src="../images/git.png" alt="git hub" /></a></li>
+			</ul>
+			<!-- Blog post list -->
+			<ul id="postNav">
+				<li class="weekLabel">U1.W1: Git Bloggin</li>
+				<li><a href="t1-git-blog.html">Prepare your blog</a></li>
+				<li><a href="c1-chefs-kitchen.html">Kitchen vs. Table</a></li>
+				<li class="weekLabel">U1.W2: Technical Blog</li>
+				<li><a href="t2-css-design.html">Differences between relative, absolute, and fixed positioning</a></li>
+			</ul>
+
+		</nav>
+		<main>
+			<header>
+  				<a href="index.html"><img src='https://avatars1.githubusercontent.com/u/9676505?v=3&amp;s=460' class='circleImage' alt="project image" /></a>
+  			</header>
+  			<!-- Blog title -->
+		  	<h1>What are the differences between relative, absolute, and fixed positioning</h1>
+		  	<!-- Blog date -->
+		  	<h4>2 - 15 - 2015</h4>
+
+			<!-- Blog content -->
+			<section class='sectionNone'>
+				When adding elements to a HTML document, you'll notice that every element shows up on the browser in the same order that they are in the document, one below the other. Except for 'a' and 'span' tags, since their default display property are set to inline. Others tags default display property is block.
+
+				<img src="../images/position1.png" alt="Figure 1" class="blogImage" />
+
+
+				In other to position the elements according to a layout that you have predefined you need to use the css property position.
+
+
+				In the following image we try to move down the div element 1 by 10px, for that we set a top property indicating that it should have a 10px space on top of it, pushing down the div.
+
+				<img src="../images/position4.png" alt="Figure 2" class="blogImage" />
+
+				If you want an element to move down, left, rigth or up from its original position, then you have to declare its position as relative and use top, left, right or bottom properties to move it.
+
+				<img src="../images/position5.png" alt="Figure 3" class="blogImage" />
+
+				Notice that the body height didn't change still is 90px. But the div element 1 was push down 10px within his container.
+
+			</section>
+
+			<section class='sectionEven'>
+				This will happens to elements with position absolute and fixed as well, but the difference is that absolute position is within its parent that has position set to relative, so if you use a div inside another div and mark it as absolute your coordinates to move are going to start 0,0 where its div parent is displaying. If none of its parent is set to relative it will position using the body tag as it parent.
+
+				In the next image we set position to absolute but its parent has default position (static) so when we set top for element 2.1 it look up to it first parent with position set to relative, and didn't find it, so it use the body tag as reference, so basically the whole screen.
+
+				<img src="../images/position7.png" alt="Figure 4" class="blogImage" />
+
+				Now if we set element 2 parent position to relative, element 2.1 will use it as reference, and its coordinate will begin where this div (parent position set to relative) is.
+
+				<img src="../images/position8.png" alt="Figure 5" class="blogImage" />
+
+			</section>
+			
+			<section class='sectionNone'>
+				But if you set position to be fixed then no matter where your div is, its parent will be the browser display screen, which means the element wont move not even when scrolling the page.
+
+				<img src="../images/position9.png" alt="Figure 6" class="blogImage" />
+
+				Hope this post helped you understand a little be more the differences between relative,absolute and static position.
+
+			</section>
+
+		</main>
+   		
+  	</body>
+</html>
