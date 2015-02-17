@@ -1,0 +1,67 @@
+/* include your css here */
+.none {
+  background-color: clear;
+}
+
+.even {
+  background-color: #cccccc;
+}
+
+.person {
+  width:50%;
+  padding: 10px;
+  float:left;
+  text-align: center;
+  -webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+  
+}
+
+ul {
+  list-style:none;
+}
+
+.person span {
+  
+}
+
+.person img {
+  width: 25%;
+}
+
+#profiles {
+  width: 50%;
+  margin: auto;
+  overflow:auto;
+}
+
+.listtitle {
+  font-size: 1.5em;
+}
+
+section {
+  clear:both;
+
+}
+
+body {
+  width:75%;
+  margin:auto;
+}
+
+.comparison {
+  width: 45%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.even h2 {
+  text-align:right;
+}
+
+h2 {
+  padding-top:5px;
+}
