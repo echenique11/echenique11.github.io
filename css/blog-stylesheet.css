@@ -83,3 +83,55 @@ main {
 	padding:20px;
 	display: block;
 }
+
+ pre {
+ 	border:1px solid #888;
+ }
+
+ blockquote {
+ 	width : 90%;
+ 	background-color: #333;
+ 	padding: 5px;
+ 	text-align: left !important;
+ 	color: pink;
+ }
+
+ table {
+ 	margin : auto;
+ 	border: 1px solid #ccc;
+ 	padding: 10px
+ }
+
+ td {
+ 	border: 1px solid #ccc;
+ }
+
+ th {
+ 	border: 1px solid #000;
+ 	background-color: #fff;
+ }
+
+.splitUl {
+	width:50%;
+	float:left;
+}
+
+.liTitle {
+	background-color: #333;
+	color: #fff;
+}
+
+.liLabel {
+	background-color: #fff;
+	color: #333;
+}
+
+section {
+	clear: both;
+	overflow: hidden;
+}
+
+#listContainer {
+	width: 80%;
+	margin:auto;
+}

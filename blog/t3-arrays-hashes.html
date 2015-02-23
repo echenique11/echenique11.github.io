@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Luis Echenique</title>
+		<link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+	</head>
+	<body>
+		<nav>
+			<ul id="socialLinks">
+				<li><a href=""><img src="../images/twitter.png" alt="twitter" /></a></li>
+				<li><a href=""><img src="../images/google.png" alt="google +" /></a></li>
+				<li><a href=""><img src="../images/git.png" alt="git hub" /></a></li>
+			</ul>
+			<!-- Blog post list -->
+			<ul id="postNav">
+				<li class="weekLabel">U1.W1: Git Bloggin</li>
+				<li><a href="t1-git-blog.html">Prepare your blog</a></li>
+				<li><a href="c1-chefs-kitchen.html">Kitchen vs. Table</a></li>
+				<li class="weekLabel">U1.W2: Technical Blog</li>
+				<li><a href="t2-css-design.html">differences between relative, absolute, and fixed positioning</a></li>
+				<li class="weekLabel">U1.W3: Bloggin</li>
+				<li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+				<li><a href="c3-thinking-style.html">Your thinking style and learning</a></li>
+			</ul>
+
+		</nav>
+		<main>
+			<header>
+  				<a href="index.html"><img src='https://avatars1.githubusercontent.com/u/9676505?v=3&amp;s=460' class='circleImage' alt="project image" /></a>
+  			</header>
+  			<!-- Blog title -->
+		  	<h1>Arrays and Hashes</h1>
+		  	<!-- Blog date -->
+		  	<h4>2 - 21 - 2015</h4>
+
+			<!-- Blog content -->
+			<section class='sectionNone'>
+
+			Lets say you are writing a program for a shopping cart. You will need a data structure that allows you to store all items that the client has selected. For this you you have several ways to do it, but lets say you use an array. An a Array is a variable that holds a list of references to others variables. So if a customer buys 3 products and you use variables you will need to declare :
+			
+			<pre><blockquote>
+				item_one = "Product 1"
+				item_two = "Product 2"
+				item_three = "Product 3"
+			</blockquote></pre>
+			
+			But if you use and Array you will declare only one that holds the other 3, for example :
+			
+			<pre><blockquote>
+				products = ["Product 1","Product 2","Product 3"]
+			</blockquote></pre>
+
+			This is better than declaring one variable for each product. Now we want to know at least the price for each product. For that we could create another Array that contains the prices of the products in the same order that the Array above :
+
+			<pre><blockquote>
+				products = ["Product 1","Product 2","Product 3"]
+				prices = ["Price 1","Price 2","Price 3"]
+			</blockquote></pre>
+
+			So if we want to know the price of each product we need to know the index of each product within the Array and then do something like :
+
+			<pre><blockquote>				
+				def get_product_price(index)
+					products = ["Product 1","Product 2","Product 3"]
+					prices = ["Price 1","Price 2","Price 3"]
+					puts products[index] + prices[index]
+				end
+			</blockquote></pre>
+
+			This is not a good practice, since you will be having two Arrays storing related data that should be in the same place, in order to prevent mistakes like, in this case, say you declare the  Price 2 at index 0, then you will be getting "Product 1 Price 2", which is wrong, or lets say you only have 2 elements for the prices Array, then if you do :
+
+			  <pre><blockquote>				
+				def get_product_price(index)
+					products = ["Product 1","Product 2","Product 3"]
+					prices = ["Price 1","Price 2"]
+					puts products[index] + prices[index]
+				end
+
+				get_product_price(2)
+			</blockquote></pre>
+
+			Upps, prices Array doesn't have an index 2, just 0 and 1. So you will be getting a TypeError since you can do to_s to a nil value.
+			</section>
+
+			<section class='sectionEven'>
+			For our shopping cart example if better if we use a Hash. A Hash is also a list but of key pair values, were the key represent the index of the value within the Hash (the list). So lets store our products and prices in one hash 
+
+			  <pre><blockquote>				
+				def get_product_price(index)
+					products = {
+						"Product 1" => "Price 1",
+						"Product 2" => "Price 2",
+						"Product 3" => "Price 3"
+					}
+					puts products[index]
+				end
+
+				get_product_price("Product 1")
+			</blockquote></pre>
+
+			Now if we want to know the price of "Product 1" we only need to use it as an index (key) and it will give us its value.
+			</section>
+			<section class='sectionNone'>
+			Another benefit of using Hash, in this scenario, lets say we want to update the price of one of our product. For the Array version you will have to iterate the Array looking for the product index and then go to the prices array and update that index.
+
+			With Hash you only need :  products["Product 1"] = "New Price".
+			</section>
+
+		</main>
+   		
+  	</body>
+</html>
