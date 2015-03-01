@@ -25,20 +25,45 @@
 				<li><a href="t4-enumerable-methods.html">Enumerable map method</a></li>
 				<li><a href="c4-tech-issues.html">Tech issues</a></li>
 			</ul>
-
 		</nav>
 		<main>
 			<header>
   				<a href="index.html"><img src='https://avatars1.githubusercontent.com/u/9676505?v=3&amp;s=460' class='circleImage' alt="project image" /></a>
   			</header>
   			<!-- Blog title -->
-		  	<h1></h1>
+		  	<h1>Enumerable map method</h1>
 		  	<!-- Blog date -->
-		  	<h4></h4>
+		  	<h4>2 - 28 - 2015</h4>
 
 			<!-- Blog content -->
 			<section class='sectionNone'>
+			<p>From the Ruby documentation "The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection." </p>
+			<p>One of these methods is "map". This method iterates each element of the list and return a new array with the result of the operation define in the block section for each one.</p>
+			</section>
+			<section class="sectionEven" >
+			<p>Lets say you have an array of prices : </p>
+			<pre><blockquote>
+				prices = [120.34,234.56,456.78] 
+			</blockquote></pre> 
+			<p>And you want to increase prices by 10%. You could create another array and when looping prices just insert in the another array the element + 10%, like : </p>
 
+			<pre><blockquote>
+				prices = [120.34,234.56,456.78] 
+				another = Array.new
+				prices.each {|price| 
+					another.push(price*1.10)
+				}
+			</blockquote></pre> 
+			</section>
+			<section class='sectionNone'>
+			This works, now you have another array with all the prices increase by 10% (price*1.10). But a cleaner solution will be using map.
+
+			<pre><blockquote>
+				prices = [120.34,234.56,456.78] 
+				prices.map {|price| 
+					price*1.10
+				}
+			</blockquote></pre> 
 			</section>
 
 		</main>
