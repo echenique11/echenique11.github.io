@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Luis Echenique</title>
+		<link rel="stylesheet" type="text/css" href="../css/blog-stylesheet.css">
+	</head>
+	<body>
+		<nav>
+			<ul id="socialLinks">
+				<li><a href=""><img src="../images/twitter.png" alt="twitter" /></a></li>
+				<li><a href=""><img src="../images/google.png" alt="google +" /></a></li>
+				<li><a href=""><img src="../images/git.png" alt="git hub" /></a></li>
+			</ul>
+			<!-- Blog post list -->
+			<ul id="postNav">
+				<li class="weekLabel">U1.W1: Git Bloggin</li>
+				<li><a href="t1-git-blog.html">Prepare your blog</a></li>
+				<li><a href="c1-chefs-kitchen.html">Kitchen vs. Table</a></li>
+				<li class="weekLabel">U1.W2: Technical Blog</li>
+				<li><a href="t2-css-design.html">differences between relative, absolute, and fixed positioning</a></li>
+				<li class="weekLabel">U1.W3: Bloggin</li>
+				<li><a href="t3-arrays-hashes.html">Arrays and Hashes</a></li>
+				<li><a href="c3-thinking-style.html">Your thinking style and learning</a></li>
+				<li class="weekLabel">U2.W4: Bloggin</li>
+				<li><a href="t4-enumerable-methods.html">Enumerable map method</a></li>
+				<li><a href="c4-tech-issues.html">Tech issues</a></li>
+				<li class="weekLabel">U2.W5: Bloggin</li>
+				<li><a href="t5-ruby-classes.html">Ruby Classes</a></li>
+				<li><a href="c5-feedback.html">Feedback</a></li>
+			</ul>
+
+		</nav>
+		<main>
+			<header>
+  				<a href="index.html"><img src='https://avatars1.githubusercontent.com/u/9676505?v=3&amp;s=460' class='circleImage' alt="project image" /></a>
+  			</header>
+  			<!-- Blog title -->
+		  	<h1>Ruby Classes</h1>
+		  	<!-- Blog date -->
+		  	<h4>3 - 08 - 2015</h4>
+
+			<!-- Blog content -->
+			<section class='sectionNone'>				
+			Classes are layouts that contain the structure of Objects, their behavior and attributes. We use Classes to model real life objects and create instance of them.
+			To better explain Classes we will create one, that model a Person.
+			</section>
+			<section class='sectionEven'>
+				So let’s think what attributes a person has:
+				Name, Last Name, Gender, Day of Birth
+				And any other that you could think of, a Class can have as many attributes as you need. 
+				Now let’s think of what a person do, and we could use this as methods to simulate their behavior. 
+				Walk, Jump, Eat, Sleep, Talk, Breath
+				And so on…
+			</section>
+			<section class='sectionNone'>
+				Our class will look like this
+				<pre><blockquote>
+							
+				class Person
+					def initialize (name,last_name,gender,dob)
+						@name = name 
+						@last_name = last_name
+						@gender = gender
+						@day_of_birth = dob
+					end
+
+					def walk
+						#walking, we could define how fast a person walks or for how long
+					end
+
+					def jump
+						#jumping, define how high and how long 
+					end
+
+					def eat
+						#eating, what type of food, how many, how he eats
+					end
+
+					def sleep
+						#sleeping, how many hours, on what side
+					end
+
+					def speak
+						#speaking, in what language, how fast
+					end
+
+					def breath
+						#breathing, how often, how it breath
+					end
+
+				end
+				</blockquote></pre>
+			</section>
+
+			<section class='sectionEven'>
+				Notice the initialize method? In this method we initializing every attribute for this person, giving it a name, last name a gender and a day of birth.
+When creating an instance of a class Person we are creating an object of type Person that will have it owns attributes and behavior, so when doing :
+<pre><blockquote>
+Person.new(Luis,Echenique,male,09-11-1980) 
+</blockquote></pre>
+we are simulating a person (object) , with this attributes.
+			</section>
+
+		</main>
+   		
+  	</body>
+</html>
