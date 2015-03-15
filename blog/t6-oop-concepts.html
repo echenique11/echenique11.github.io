@@ -11,6 +11,7 @@
 				<li><a href=""><img src="../images/google.png" alt="google +" /></a></li>
 				<li><a href=""><img src="../images/git.png" alt="git hub" /></a></li>
 			</ul>
+			<!-- Blog post list -->
 			<ul id="postNav">
 				<li class="weekLabel">U1.W1: Git Bloggin</li>
 				<li><a href="t1-git-blog.html">Prepare your blog</a></li>
@@ -36,33 +37,37 @@
 			<header>
   				<a href="index.html"><img src='https://avatars1.githubusercontent.com/u/9676505?v=3&amp;s=460' class='circleImage' alt="project image" /></a>
   			</header>
-		  	<h1>Prepare your blog</h1>
-		  	<h4>2/7/2015</h4>
+  			<!-- Blog title -->
+		  	<h1>Class methods</h1>
+		  	<!-- Blog date -->
+		  	<h4>3 - 15 -2015</h4>
 
+			<!-- Blog content -->
 			<section class='sectionNone'>
-			  	<h2>What are the benefits of version control?</h2>
-			    <p>To know the benefits of version control, you need to know first what version control is, right?. Version control is a system that keeps track of all changes made to a file/folder and allows you to go back in history of that file/folder to get a specific saved version. Knowing that, some of the version control benefits are :
-			     </p>
-			     <ul>
-			       <li>Retrieve old versions of a file/folder</li>
-			       <li>Display changes made to a file/folder</li>
-			       <li>Work with an updated version of the file/folder</li>
-			       <li>Create new version of the project</li>
-			     </ul>
+				Class methods are static methods that belongs to the class. This means that there is no need to instantiate the class (create an objest) to call on them.
+
+				<pre><blockquote>
+					class Person 
+						def self.who_is_older (person_one,person_two)
+							#calculate who is older
+						end
+					end 
+					Person.who_is_older(person_one,person_two) 
+				</blockquote></pre>
+
 			</section>
 
-			 
-		    <section class='sectionEven'>
-			    <h2>How does git help you keep track of changes?</h2>
-			    <p>git is a version system that store all changes made to a file as a different version of the file, and allows you to check the history of the file and merge with others version to update the file.    
-			    </p>
-		  	</section>
+			<section class='sectionEven'>
+				Notice the self key word on the methods name?, this means that who_is_older is a class methods, and that is why we can call that method without creating an instance. Like :
 
-			  
-		   	<section class='sectionNone'>
-			   	<h2>Why use GitHub to store your code?</h2>
-				<p>GitHub is a social site to share projects, here you can push or pull your code or someone's else.</p>
-		  	</section>
+				<pre><blockquote>
+					Person.who_is_older(person_one,person_two) 
+				</blockquote></pre>
+			</section>
+
+			<section class='sectionNone'>
+			Class methods should perform actions that are not instance relate, should be an util method that return a calulcate value.
+			</section>
 		</main>
    		
   	</body>
