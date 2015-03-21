@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Luis Echenique - JS Game</title>
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+		<script src="js/my_solution.js"></script>
+	</head>
+<body>
+	<div id="legendContainer">
+		<ul>
+			<li>Avoid getting close to others Prisoners</li>
+			<li>Talk to the guardian press the T key</li>
+			<li>Open the door press the O key</li>
+			<li>How to play : </li>
+			<li>press W to move up</li>
+			<li>press D to move right</li>
+			<li>press S to move down</li>
+			<li>press A to move left</li>
+		</ul>
+	</div>
+	<div id="gameContainer">
+		<div id="playersContainer">
+			<div id="guardian" class="player" >
+				<span class="name">Guardian</span>
+			</div>
+			<div id="door" ></div>
+			<div id="player" class="player" >
+				<span class="name">Player</span>
+			</div>
+			<div id="prisoner_one" class="player" >
+				<span class="name">Prisioner One</span>
+			</div>
+			<div id="prisoner_two" class="player" >
+				<span class="name">Prisioner Two</span>
+			</div>
+		</div>
+	</div>
+<script src="my_solution.js"></script>
+<script type="text/javascript">
+	renderElements();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+	background-color: #000;
+}
+#gameContainer {
+	background-color: #ccc;			
+}
+
+#playersContainer {
+	position: relative;
+}
+.player{
+	width:60px;
+	height:60px;	
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	border: 1px solid #000;
+	text-align: center;
+	position: absolute;
+}
+#player {
+	background-color: blue;
+}
+#guardian {
+	background-color: green;
+}
+#prisoner_one {
+	background-color: gray;
+}
+#prisoner_two {
+	background-color: gray;
+}
+.name {
+	padding: 5px;
+	font-size: 10px;
+	color: white;
+	top:10px;
+	position: relative;			
+}
+#legendContainer {
+	position: fixed;
+	top:0px;
+	left:0px;
+}
+
+ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	background-color: #333;
+	font-weight: bold;
+	color: #fff;
+}
+li {
+	padding: 10px;
+}
+#door {
+	height: 120px;
+	width: 50px;
+	background-color: #333;
+	position: absolute;
+}
