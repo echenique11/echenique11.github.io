@@ -5,48 +5,6 @@ body {
 	background-color: #FAFAFA;
 }
 
-nav {
-	position: fixed;
-	top:0px;
-	background-color: #5882FA;
-	width:100%;
-	height: 80px;
-	z-index: 998;
-}
-
-a {
-	text-decoration: none;
-	font-weight: bold;
-}
-
-ul {
-	list-style: none;
-}
-
-nav ul {
-	float: right;
-	padding: 10px;
-}
-
-nav ul li {
-	display: inline;
-	margin-left: 10px;
-}
-
-nav a {
-	color:#fff;
-}
-
-nav a:hover {
-	color:#333;
-}
-
-nav div {
-	float:right;
-	padding-top: 24px;
-	padding-right: 10px;
-}
-
 .logoContainer {
 	position: fixed;
 	z-index: 999;
@@ -89,7 +47,8 @@ nav div {
 
 #socialLinks ul {
 	margin:auto;
-	width: 165px;
+	padding:10px;
+	width: 180px;
 
 }
 
@@ -125,15 +84,6 @@ nav div {
 	clear: both;
 }
 
-
-footer {
-	width: 100%;
-	padding: 10px 0px;
-	text-align: center;
-	font-weight: bold;
-	background-color: #333;
-	color: #fff;
-}
 
 .clearBoth {
 	clear:both;
